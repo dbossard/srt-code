@@ -1,0 +1,26 @@
+{
+    "name": "srt",
+    "displayName": "srt-code",
+    "description": "Syntax defintion for SRT (subtitles) files",
+    "version": "0.0.1",
+    "publisher": "dbossard",
+    "engines": {
+        "vscode": "^1.16.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "srt",
+            "aliases": ["Subtitles (SRT)", "srt"],
+            "extensions": [".srt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "srt",
+            "scopeName": "text.srt",
+            "path": "./syntaxes/srt.tmLanguage.json"
+        }]
+    }
+}
